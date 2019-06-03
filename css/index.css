@@ -247,9 +247,13 @@ footer {
 /* media queries CSS */
 
 @media (max-width: 800px) {
+    body {
+        width: 500px;
+    }
     nav {
         margin-top: 20px;
         display: flex;
+        border: 1px solid red;
         width: 100%;
         height: 60px;
         align-items: center;
@@ -422,4 +426,10 @@ footer {
           footer {
             text-align: center;
           }
+        }
+
+        @media(max-width: 800px) {
+            .middle-img {
+                visibility: hidden;
+            }
         }
